@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "ResumePro Builder",
+    "description": "Create professional resumes with modern templates and ATS-friendly formatting.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "DesignKit Studio",
+    "description": "All-in-one graphic design tool for social media, branding, and marketing.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["5000+ assets", "Drag & drop editor", "Brand kit"],
+    "icon": "src/assets/products/writing_2327400 1.pngpalette"
+  },
+  {
+    "id": 3,
+    "name": "TaskFlow Manager",
+    "description": "Boost productivity with task tracking, team collaboration, and automation.",
+    "price": 0,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Kanban boards", "Team collaboration", "Automation tools"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 4,
+    "name": "SEO Booster Pro",
+    "description": "Optimize your website ranking with powerful SEO tools and analytics.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Keyword research", "Site audit", "Competitor analysis"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 5,
+    "name": "CodeMaster IDE",
+    "description": "Lightweight yet powerful coding environment for developers.",
+    "price": 79.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Multi-language support", "Extensions", "Debugging tools"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 6,
+    "name": "FinanceTrack AI",
+    "description": "Smart financial planning and expense tracking powered by AI.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Expense tracking", "Budget planning", "AI insights"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 7,
+    "name": "CloudVault Storage",
+    "description": "Secure cloud storage solution with fast syncing and sharing.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["1TB storage", "File sharing", "End-to-end encryption"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 8,
+    "name": "VideoEdit Pro",
+    "description": "Professional video editing software with advanced effects and tools.",
+    "price": 129.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["4K editing", "Special effects", "Audio enhancement"],
+    "icon": "src/assets/products/writing_2327400 1.png"
+  }
+]
