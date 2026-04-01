@@ -1,16 +1,15 @@
-# React + Vite
+🚀 Digital Tools
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digital Tools is a modern web application designed to help users manage, explore, and purchase their favorite digital tools in one place. It provides a clean and intuitive interface for organizing tools you use daily.
 
-Currently, two official plugins are available:
+✨ Features
+🛒 Buy Digital Tools – Browse and purchase a variety of digital tools
+➕ Add to Cart – Easily add tools to your shopping cart
+❌ Remove from Cart – Delete items from your cart anytime
+🎨 Beautiful UI – Clean and responsive design for a smooth user experience
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Technologies Used
+⚛️ React – Frontend library for building user interfaces
+🎨 Tailwind CSS – Utility-first CSS framework for styling
+🌼 DaisyUI – Component library for Tailwind CSS
