@@ -3,19 +3,19 @@ import React from 'react'
 const Steps = () => {
   const steps = [
     {
-      img: "/src/assets/user.png",
+      img: "public/user.png",
       title: "Create Account",
       desc: "Sign up for free in seconds.",
       step: "01",
     },
     {
-      img: "/src/assets/package.png",
+      img: "public/package.png",
       title: "Choose Products",
       desc: "Browse our catalog.",
       step: "02",
     },
     {
-      img: "/src/assets/rocket.png",
+      img: "public/rocket.png",
       title: "Start Creating",
       desc: "Start using tools instantly.",
       step: "03",
