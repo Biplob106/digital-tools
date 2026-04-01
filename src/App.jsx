@@ -5,7 +5,8 @@ import Tools from './component/Tools.jsx'
 import Cart from './component/Cart.jsx'
 import Steps  from "./component/Steps.jsx";
 import Pricing from "./component/Pricing.jsx";
-
+import Footer from "./component/Footer.jsx";
+import Call from "./component/Call.jsx";
 
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
       {cartActive == "Cart" && <Cart carts={carts} setCarts={setCarts} />}
       <Steps/>
       <Pricing/>
+      <Call/>
+      <Footer/>
       
 
     </>

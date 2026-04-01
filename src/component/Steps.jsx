@@ -1,51 +1,63 @@
 import React from 'react'
 
 const Steps = () => {
-    return (
-        <div className='max-h-[762px] bg-fuchsia-50 mt-6 flex flex-col justify-center items-center'>
-  
-  <div className='p-6 text-center'>
-    <h2 className='text-4xl font-bold mb-4'>Get Started in 3 Steps</h2>
-    <p>Start using premium digital tools in minutes, not hours.</p>
-  </div>
+  const steps = [
+    {
+      img: "/src/assets/user.png",
+      title: "Create Account",
+      desc: "Sign up for free in seconds.",
+      step: "01",
+    },
+    {
+      img: "/src/assets/package.png",
+      title: "Choose Products",
+      desc: "Browse our catalog.",
+      step: "02",
+    },
+    {
+      img: "/src/assets/rocket.png",
+      title: "Start Creating",
+      desc: "Start using tools instantly.",
+      step: "03",
+    },
+  ]
 
-  <div className='grid grid-cols-3 gap-6 w-4/5 mx-auto mb-4'>
-    
-    <div className="card bg-base-100 w-96 shadow-sm">
-      <figure className="px-10 pt-10">
-        <img src="/src/assets/user.png" className="rounded-xl" />
-      </figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title">Create Account</h2>
-        <p>Sign up for free in seconds.</p>
+  return (
+    <div className="bg-fuchsia-50 py-12 px-4 sm:px-8 mt-6">
+
+      <div className="text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-3">Get Started in 3 Steps</h2>
+        <p className="text-gray-500 text-sm sm:text-base">
+          Start using premium digital tools in minutes, not hours.
+        </p>
       </div>
-    </div>
 
-    <div className="card bg-base-100 w-96 shadow-sm">
-      <figure className="px-10 pt-10">
-        <img src="/src/assets/package.png" className="rounded-xl" />
-      </figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title">Choose Products</h2>
-        <p>Browse our catalog.</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {steps.map((s) => (
+          <div key={s.step} className="card bg-base-100 shadow-sm w-full">
+
+        
+            <div className="px-6 pt-6">
+              <span className="text-xs font-bold text-purple-500 bg-purple-100 px-3 py-1 rounded-full">
+                Step {s.step}
+              </span>
+            </div>
+
+            <figure className="px-10 pt-6">
+              <img src={s.img} alt={s.title} className="rounded-xl h-24 sm:h-28 object-contain" />
+            </figure>
+
+            <div className="card-body items-center text-center">
+              <h2 className="card-title text-base sm:text-lg">{s.title}</h2>
+              <p className="text-gray-500 text-sm">{s.desc}</p>
+            </div>
+
+          </div>
+        ))}
       </div>
+
     </div>
-
-    <div className="card bg-base-100 w-96 shadow-sm">
-      <figure className="px-10 pt-10">
-        <img src="/src/assets/rocket.png" className="rounded-xl" />
-      </figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title">Start Creating</h2>
-        <p>Start using tools instantly.</p>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-    )
+  )
 }
 
 export default Steps
