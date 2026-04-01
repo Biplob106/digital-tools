@@ -36,7 +36,7 @@ const Banner = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="public/banner.png"
+              src="/banner.png"
               alt="Banner"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
             />
