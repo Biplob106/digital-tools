@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage from '../../src/assets/banner.png'
+import BannerImage from 'public/banner.png'
 
 const Banner = () => {
   const stats = [
