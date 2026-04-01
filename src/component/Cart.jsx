@@ -1,14 +1,17 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 
 const Cart = ({ carts, setCarts }) => {
 
   const handlePayment = () => {
     setCarts([])
+    toast.success("procced tools")
   }
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0)
   const handleDelete = (item)=>{
     const filteredArray = carts.filter(c=> c.id != item.id)
     setCarts(filteredArray)
+    toast.warning("cart delete");
   }
   return (
 
