@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage from 'public/banner.png'
+
 
 const Banner = () => {
   const stats = [
@@ -36,7 +36,7 @@ const Banner = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src={BannerImage}
+              src="public/banner.png"
               alt="Banner"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
             />
