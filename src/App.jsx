@@ -3,6 +3,8 @@ import Nav from './component/Nav.jsx'
 import Banner from './component/Banner.jsx'
 import Tools from './component/Tools.jsx'
 import Cart from './component/Cart.jsx'
+import Steps  from "./component/Steps.jsx";
+import Pricing from "./component/Pricing.jsx";
 
 
 
@@ -14,17 +16,17 @@ function App() {
       .then(data => setTools(data));
   }, []);
 
-  const [cartActive,setCartActive]=useState("Products");
-  console.log(cartActive);
+  const [cartActive, setCartActive] = useState("Products");
 
-  
+  const [carts, setCarts] = useState([]);
+
 
 
   return (
     <>
-      <Nav />
+      <Nav carts={carts} />
       <Banner />
-       <div className='flex flex-col justify-center text-center'>
+      <div className='flex flex-col justify-center text-center'>
         <h2 className='text-[48px] font-extrabold'>
           Premium Digital Tools
         </h2>
@@ -35,14 +37,17 @@ function App() {
         </p>
 
         <div className="tabs tabs-box justify-center bg-white">
-          <input type="radio" name="my_tabs_1" onClick={()=>setCartActive("Cart")} className="tab rounded-full w-40" aria-label="Products" defaultChecked />
-          <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart" onClick={()=>setCartActive("Products")} />
+          <input type="radio" name="my_tabs_1" onClick={() => setCartActive("Products")} className="tab rounded-full w-40" aria-label="Products" defaultChecked />
+          <input type="radio" name="my_tabs_1" onClick={() => setCartActive("Cart")} className="tab rounded-full w-40" aria-label={`Cart (${carts.length})`} />
         </div>
       </div>
 
 
-      {cartActive == "Cart" && <Tools tools={tools} />}
-      {cartActive =="Products" &&<Cart/>}
+      {cartActive == "Products" && <Tools tools={tools} carts={carts} setCarts={setCarts} />}
+      {cartActive == "Cart" && <Cart carts={carts} setCarts={setCarts} />}
+      <Steps/>
+      <Pricing/>
+      
 
     </>
   )

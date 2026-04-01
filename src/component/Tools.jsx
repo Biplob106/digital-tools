@@ -1,12 +1,12 @@
 import React from 'react'
 import ToolCard from './ToolCard.jsx';
 
-const Tools = ({ tools }) => {
+const Tools = ({ tools ,carts, setCarts }) => {
   return (
     <div>
       <div className='grid grid-cols-3 gap-5 pt-4 w-4/5 mx-auto'>
         {tools.map((tool) => (
-          <ToolCard key={tool.id} tool={tool} />
+          <ToolCard key={tool.id} tool={tool}  carts={carts} setCarts={setCarts}/>
         ))}
       </div>
     </div>

@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 
-const ToolCard = ({ tool }) => {
+const ToolCard = ({ tool ,carts, setCarts}) => {
   const [isBuy, setIsBuy] = useState(false)
+  const handleBuy= () => {
+    setIsBuy(true)
+    setCarts([...carts ,tool])
+  }
 
   return (
     <div className='shadow-lg rounded-lg border p-6'>
@@ -24,7 +28,7 @@ const ToolCard = ({ tool }) => {
         </ul>
 
         <button
-          onClick={() => setIsBuy(true)}
+          onClick={handleBuy}
           className='btn rounded-full bg-blue-600 w-full mt-3'
         >
           {isBuy ? "Buyed" : "Buy Now"}
